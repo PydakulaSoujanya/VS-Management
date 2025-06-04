@@ -1,0 +1,85 @@
+.carousel {
+    position: relative;
+    width: 1700px;
+    /* Match the slide width */
+    height: 800px;
+    /* Match the slide height */
+    overflow: hidden;
+    margin: auto;
+    /* Center the carousel */
+}
+
+.slides {
+    display: flex;
+    width: calc(1700px * 3);
+    /* 3 slides = 5100px */
+    height: 800px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 1700px;
+    height: 700px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.carousel-controls {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    padding: 0 20px;
+    z-index: 10;
+}
+
+.carousel-controls span {
+    cursor: pointer;
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.appointment-banner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    color: #fff;
+    padding: 30px 80px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+}
+
+.appointment-banner .left-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: 500;
+}
+
+.appointment-banner .left-section span {
+    font-weight: bold;
+    color: orange;
+    margin-left: 5px;
+}
+
+.appointment-banner .book-now {
+    background-color: orange;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.appointment-banner .book-now:hover {
+    background-color: darkorange;
+}
